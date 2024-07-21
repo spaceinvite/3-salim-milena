@@ -1,0 +1,90 @@
+@import '../../assets/scss/main.scss';
+
+.block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 50px;
+
+	background: var(--bg-color-dark);
+	border-radius: 30px;
+
+	&Line {
+		width: 1px;
+		background-color: var(--text-color-light);
+		height: 70px;
+	}
+
+	&Invite {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 10px;
+		padding: 0px 20px;
+		width: 100%;
+
+		&__text {
+			font-family: var(--font-family);
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 120%;
+			letter-spacing: 0.05em;
+			text-align: center;
+			color: var(--text-color-light);
+		}
+	}
+
+	&Date {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+		width: 100%;
+
+		&__title {
+			font-family: var(--second-family);
+			font-weight: 300;
+			font-size: 40px;
+			line-height: 105%;
+			text-align: center;
+			color: var(--text-color-light);
+		}
+
+		&__text {
+			font-family: var(--font-family);
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 120%;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			text-align: center;
+			color: var(--text-color-light);
+		}
+
+		&__calendar {
+			position: relative;
+			margin-top: 10px;
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
+			grid-gap: 8px;
+
+			&Item {
+				min-width: 32px;
+				max-width: 32px;
+				font-family: var(--font-family);
+				font-weight: 300;
+				font-size: 24px;
+				line-height: 120%;
+				text-transform: uppercase;
+				text-align: center;
+				color: var(--text-color-light);
+			}
+
+			&Heart {
+				position: absolute;
+				top: 28px;
+				left: 32px;
+			}
+		}
+	}
+}

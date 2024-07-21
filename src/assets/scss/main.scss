@@ -1,0 +1,14 @@
+@import './reset';
+@import './fonts';
+
+html {
+	--bg-color-light: #fbf6f2;
+	--bg-color-dark: #1b1b1b;
+	--text-color-light: #f5f4f2;
+	--text-color-dark: #2c2c2c;
+
+	--font-family: Lato, sans-serif;
+	--second-family: 'Bergamasco', sans-serif;
+
+	font-family: var(--font-family);
+}

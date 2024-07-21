@@ -1,0 +1,19 @@
+@import '../../assets/scss/main.scss';
+
+.main {
+	&Mobile {
+		display: flex;
+		flex-direction: column;
+
+		overflow: hidden !important;
+		background: var(--bg-color-light);
+	}
+}
+
+@media (min-width: 640px) {
+	.main {
+		&Mobile {
+			display: none;
+		}
+	}
+}
