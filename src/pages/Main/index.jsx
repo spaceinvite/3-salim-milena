@@ -9,7 +9,7 @@ import { InviteBlock } from '../../components/InviteBlock';
 import { LocationBlock } from '../../components/LocationBlock';
 import styles from './Main.module.scss';
 
-export const Main = () => {
+export const Main = ({ state }) => {
 	useEffect(() => {
 		Aos.init();
 	}, []);
@@ -20,7 +20,7 @@ export const Main = () => {
 			<div className={styles.mainMobile}>
 				<StartBlock />
 				<SecondBlock />
-				<InviteBlock />
+				<InviteBlock state={state} />
 				<LocationBlock />
 			</div>
 		</div>

@@ -6,7 +6,8 @@ import './assets/scss/main.scss';
 function App() {
 	return (
 		<Routes>
-			<Route path='/' element={<Main />} />
+			<Route path='/' element={<Main state='bride' />} />
+			<Route path='/wd' element={<Main state='groom' />} />
 		</Routes>
 	);
 }

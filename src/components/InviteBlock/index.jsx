@@ -1,6 +1,6 @@
 import styles from './InviteBlock.module.scss';
 
-export const InviteBlock = () => {
+export const InviteBlock = ({ state }) => {
 	return (
 		<div className={styles.block}>
 			<div className={styles.blockLine}></div>
@@ -36,7 +36,7 @@ export const InviteBlock = () => {
 					data-aos-duration='1200'
 					data-aos-once='true'
 				>
-					6 августа 2024
+					{`${state === 'bride' ? 6 : 4} августа 2024`}
 				</p>
 				<div className={styles.blockDate__calendar}>
 					{[
@@ -53,6 +53,11 @@ export const InviteBlock = () => {
 					))}
 					<div
 						className={styles.blockDate__calendarHeart}
+						style={
+							state === 'bride'
+								? { top: '28px', left: '32px' }
+								: { top: '-8px', right: '-9px' }
+						}
 						data-aos='zoom-in'
 						data-aos-duration='1800'
 						data-aos-once='true'
