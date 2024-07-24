@@ -18,7 +18,7 @@ export const Main = ({ state }) => {
 		<div className={styles.main}>
 			<DesktopView />
 			<div className={styles.mainMobile}>
-				<StartBlock />
+				<StartBlock state={state} />
 				<SecondBlock />
 				<InviteBlock state={state} />
 				<LocationBlock />

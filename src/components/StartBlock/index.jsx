@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import styles from './StartBlock.module.scss';
 import music from '../../assets/audio/music.mp3';
 
-export const StartBlock = () => {
+export const StartBlock = ({ state }) => {
 	const audioRef = useRef(null);
 
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -85,7 +85,7 @@ export const StartBlock = () => {
 				data-aos-duration='1500'
 				data-aos-once='true'
 			>
-				06
+				{state === 'bride' ? '06' : '04'}
 				<br />
 				08
 				<br />
